@@ -20,8 +20,12 @@ if version >= 700
   hi ColorColumn                  guibg=#2d2d2d ctermbg=236
   hi CursorColumn                 guibg=#2d2d2d ctermbg=236
   hi MatchParen                   ctermfg=None ctermbg=237 cterm=bold
-  hi Pmenu                        ctermfg=white ctermbg=237
+  hi Pmenu                        ctermfg=white ctermbg=235
   hi PmenuSel                     cterm=none ctermfg=none ctermbg=124
+
+  " hi Pmenu                        ctermfg=white ctermbg=237 ///
+  " hi PmenuSel                     cterm=reverse,bold ctermfg=red ctermbg=none
+  "TODO test mix of these colors on mac default font
 endif
 
 " General colors
@@ -48,7 +52,7 @@ hi Function   guifg=#ffffff gui=bold ctermfg=255
 hi Type       guifg=#7e8aa2 gui=none ctermfg=103
 hi Statement  guifg=#7e8aa2 gui=none ctermfg=103
 hi Keyword    guifg=#ff9800 gui=none ctermfg=208
-hi Constant   guifg=#ff9800 gui=none  ctermfg=208
+hi Constant   guifg=#ff9800 gui=none ctermfg=208
 hi Number     guifg=#ff9800 gui=none ctermfg=208
 hi Special    guifg=#ff9800 gui=none ctermfg=208
 hi PreProc    guifg=#faf4c6 gui=none ctermfg=230
@@ -90,7 +94,9 @@ hi jsStringS ctermfg=150
 hi link jsStringD NONE
 hi jsStringD ctermfg=150
 
-
+"Fugitive
+hi gitcommitDiscardedFile ctermfg=red
+hi gitcommitSelectedFile ctermfg=green
 
 " HiLink javascriptAngular Constant
 
