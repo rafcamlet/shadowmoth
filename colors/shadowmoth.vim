@@ -20,8 +20,8 @@ if version >= 700
   hi ColorColumn                  guibg=#2d2d2d ctermbg=236
   hi CursorColumn                 guibg=#2d2d2d ctermbg=236
   hi MatchParen                   ctermfg=None ctermbg=237 cterm=bold
-  hi Pmenu                        ctermfg=white ctermbg=235
-  hi PmenuSel                     cterm=reverse,bold ctermfg=red ctermbg=none
+  hi Pmenu                        ctermfg=white ctermbg=237
+  hi PmenuSel                     cterm=none ctermfg=none ctermbg=124
 endif
 
 " General colors
@@ -67,13 +67,13 @@ hi def link NERDTreeCWD String
 hi def link NERDTreePart String
 
 " .diff
-hi diffAdded    ctermfg=green
-hi diffRemoved  ctermfg=red
+hi diffAdded    ctermfg=green cterm=none
+hi diffRemoved  ctermfg=red cterm=none
 " vimdiff
-hi diffAdd      ctermfg=bg  ctermbg=green
-hi diffDelete   ctermfg=bg  ctermbg=red
-hi diffChange   ctermfg=bg  ctermbg=blue cterm=none
-hi diffText     ctermfg=bg  ctermbg=cyan cterm=bold
+hi diffAdd      ctermfg=bg  ctermbg=green cterm=None
+hi diffDelete   ctermfg=white  ctermbg=196 cterm=None
+hi diffChange   ctermfg=bg  ctermbg=38 cterm=None
+hi diffText     ctermfg=bg  ctermbg=cyan cterm=None
 
 " JAVASCRIPT
 
