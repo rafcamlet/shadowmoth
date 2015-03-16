@@ -11,24 +11,25 @@ let g:colors_name = "shadowmoth"
 hi LineNr ctermfg=244 ctermbg=232
 hi Normal ctermfg=253 ctermbg=233
 
-hi Search cterm=reverse ctermfg=cyan ctermbg=none
-hi IncSearch cterm=reverse ctermfg=red ctermbg=none
+hi Search      cterm=reverse   ctermfg=cyan   ctermbg=none
+hi IncSearch   cterm=reverse   ctermfg=red    ctermbg=none
 
 " Vim >= 7.0 specific colors
 if version >= 700
-  hi CursorLine                   guibg=#2d2d2d ctermbg=236
-  hi ColorColumn                  guibg=#2d2d2d ctermbg=236
-  hi CursorColumn                 guibg=#2d2d2d ctermbg=236
-  hi MatchParen                   ctermfg=None ctermbg=237 cterm=bold
-  hi Pmenu                        ctermfg=white ctermbg=235
-  hi PmenuSel                     cterm=none ctermfg=none ctermbg=124
-
-  " hi Pmenu                        ctermfg=white ctermbg=237 ///
-  " hi PmenuSel                     cterm=reverse,bold ctermfg=red ctermbg=none
-  "TODO test mix of these colors on mac default font
+  hi   CursorLine     ctermbg=236
+  hi   ColorColumn    ctermbg=236
+  hi   CursorColumn   ctermbg=236
+  hi   MatchParen     ctermfg=None    ctermbg=237   cterm=bold
+  hi   Pmenu          ctermfg=white   ctermbg=235
+  hi   PmenuSel       ctermfg=none    ctermbg=124   cterm=none
 endif
 
 " General colors
+
+hi   TabLineFill   ctermfg=0    ctermbg=0
+hi   TabLine       ctermfg=12   ctermbg=0     cterm=none
+hi   TabLineSel    ctermfg=9    ctermbg=233   cterm=none
+
 hi Cursor       guifg=NONE    guibg=#626262 gui=none ctermbg=241
 hi NonText      guifg=#808080 guibg=#202020 gui=none ctermfg=244 ctermbg=235
 
@@ -79,7 +80,7 @@ hi diffDelete   ctermfg=white  ctermbg=196 cterm=None
 hi diffChange   ctermfg=bg  ctermbg=38 cterm=None
 hi diffText     ctermfg=bg  ctermbg=cyan cterm=None
 
-" JAVASCRIPT
+"====== Javascript
 
 " HiLink javascriptAServices Constant
 hi link javascriptAServices NONE
@@ -94,9 +95,14 @@ hi jsStringS ctermfg=150
 hi link jsStringD NONE
 hi jsStringD ctermfg=150
 
-"Fugitive
+"====== Fugitive
+
 hi gitcommitDiscardedFile ctermfg=red
 hi gitcommitSelectedFile ctermfg=green
+
+"====== Ruby
+
+hi rubyInstanceVariable ctermfg=203
 
 " HiLink javascriptAngular Constant
 
@@ -113,23 +119,3 @@ hi gitcommitSelectedFile ctermfg=green
 " HiLink javascriptAStimeoutMethods     PreProc
 " HiLink javascriptASscopeMethods       PreProc
 " HiLink javascriptAScookieStoreMethods PreProc
-
-"===================
-"  NR-16   NR-8    COLOR NAME
-"   0      0        Black
-"   1      4        DarkBlue
-"   2      2        DarkGreen
-"   3      6        DarkCyan
-"   4      1        DarkRed
-"   5      5        DarkMagenta
-"   6      3        Brown, DarkYellow
-"   7      7        LightGray, LightGrey, Gray, Grey
-"   8      0*       DarkGray, DarkGrey
-"   9      4*       Blue, LightBlue
-"   10     2*       Green, LightGreen
-"   11     6*       Cyan, LightCyan
-"   12     1*       Red, LightRed
-"   13     5*       Magenta, LightMagenta
-"   14     3*       Yellow, LightYellow
-"   15     7*       White
-
