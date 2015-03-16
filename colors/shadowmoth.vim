@@ -27,8 +27,8 @@ endif
 " General colors
 
 hi   TabLineFill   ctermfg=0    ctermbg=0
-hi   TabLine       ctermfg=12   ctermbg=0     cterm=none
-hi   TabLineSel    ctermfg=9    ctermbg=233   cterm=none
+hi   TabLine       ctermfg=248   ctermbg=0     cterm=none
+hi   TabLineSel    ctermfg=111    ctermbg=233   cterm=none
 
 hi Cursor       guifg=NONE    guibg=#626262 gui=none ctermbg=241
 hi NonText      guifg=#808080 guibg=#202020 gui=none ctermfg=244 ctermbg=235
