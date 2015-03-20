@@ -103,6 +103,7 @@ hi gitcommitSelectedFile ctermfg=green
 "====== Ruby
 
 hi rubyInstanceVariable ctermfg=203
+hi rubySymbol ctermfg=208
 
 " HiLink javascriptAngular Constant
 
