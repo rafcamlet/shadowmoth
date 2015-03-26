@@ -7,13 +7,6 @@ endif
 
 let g:colors_name = "shadowmoth"
 
-
-hi LineNr ctermfg=244 ctermbg=232
-hi Normal ctermfg=253 ctermbg=233
-
-hi Search      cterm=reverse   ctermfg=cyan   ctermbg=none
-hi IncSearch   cterm=reverse   ctermfg=red    ctermbg=none
-
 " Vim >= 7.0 specific colors
 if version >= 700
   hi   CursorLine     ctermbg=236
@@ -33,11 +26,19 @@ hi   TabLineSel    ctermfg=9    ctermbg=233   cterm=none
 hi Cursor       guifg=NONE    guibg=#626262 gui=none ctermbg=241
 hi NonText      guifg=#808080 guibg=#202020 gui=none ctermfg=244 ctermbg=235
 
+hi LineNr ctermfg=244 ctermbg=232
+hi Normal ctermfg=253 ctermbg=233
+
+hi Search      cterm=reverse   ctermfg=cyan   ctermbg=none
+hi IncSearch   cterm=reverse   ctermfg=red    ctermbg=none
+hi SignColumn  ctermbg=0
+
+
 hi WildMenu     cterm=reverse,bold ctermfg=red ctermbg=none
 hi StatusLine   ctermbg=236 cterm=bold
 hi StatusLineNC ctermbg=235 cterm=none
 
-hi VertSplit    guifg=#444444 guibg=#444444 gui=none ctermfg=238 ctermbg=238
+hi VertSplit    ctermfg=238 ctermbg=238
 hi Folded       guifg=#a0a8b0 guibg=#202020 gui=none ctermbg=4 ctermfg=248
 hi Title        guifg=#f6f3e8 guibg=NONE    gui=bold ctermfg=254 cterm=bold
 hi Visual       guifg=#faf4c6 guibg=#3c414c gui=none ctermfg=254 ctermbg=4
@@ -74,6 +75,7 @@ hi def link NERDTreePart String
 " .diff
 hi diffAdded    ctermfg=green cterm=none
 hi diffRemoved  ctermfg=red cterm=none
+
 " vimdiff
 hi diffAdd      ctermfg=bg  ctermbg=green cterm=None
 hi diffDelete   ctermfg=white  ctermbg=196 cterm=None
@@ -86,7 +88,6 @@ hi diffText     ctermfg=bg  ctermbg=cyan cterm=None
 hi link javascriptAServices NONE
 hi javascriptAServices ctermfg=yellow
 
-
 " hi link jsStringS String
 hi link jsStringS NONE
 hi jsStringS ctermfg=150
@@ -95,6 +96,7 @@ hi jsStringS ctermfg=150
 hi link jsStringD NONE
 hi jsStringD ctermfg=150
 
+hi jsLineComment ctermfg=244
 "====== Fugitive
 
 hi gitcommitDiscardedFile ctermfg=red
