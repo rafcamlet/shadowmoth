@@ -17,6 +17,7 @@ if version >= 700
   hi   PmenuSel       ctermfg=none    ctermbg=124   cterm=none
 endif
 
+"TODO 204 fancy pink, find usage :)
 " General colors
 
 hi   TabLineFill   ctermfg=0    ctermbg=0
@@ -48,7 +49,7 @@ hi SpecialKey   guifg=#808080 guibg=#202020 gui=none ctermfg=244 ctermbg=236
 hi Comment    guifg=#808080 gui=italic ctermfg=244
 hi Todo       ctermfg=245 cterm=reverse ctermfg=green ctermbg=none
 hi Boolean    guifg=#b1d631 gui=none ctermfg=148
-hi String     guifg=#b1d631 gui=italic ctermfg=148
+hi String     guifg=#b1d631 gui=italic ctermfg=150
 hi Identifier guifg=#b1d631 gui=none ctermfg=148
 hi Function   guifg=#ffffff gui=bold ctermfg=255
 hi Type       guifg=#7e8aa2 gui=none ctermfg=103
@@ -106,6 +107,10 @@ hi gitcommitSelectedFile ctermfg=green
 
 hi rubyInstanceVariable ctermfg=203
 hi rubySymbol ctermfg=208
+
+"====== HTML
+
+hi htmlLink ctermfg=203
 
 " HiLink javascriptAngular Constant
 
