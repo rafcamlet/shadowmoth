@@ -40,7 +40,8 @@ hi StatusLine   ctermbg=236 cterm=bold
 hi StatusLineNC ctermbg=235 cterm=none
 
 hi VertSplit    ctermfg=238 ctermbg=238
-hi Folded       guifg=#a0a8b0 guibg=#202020 gui=none ctermbg=4 ctermfg=248
+hi Folded       ctermbg=0 ctermfg=248
+hi FoldColumn   ctermfg=0
 hi Title        guifg=#f6f3e8 guibg=NONE    gui=bold ctermfg=254 cterm=bold
 hi Visual       guifg=#faf4c6 guibg=#3c414c gui=none ctermfg=254 ctermbg=4
 hi SpecialKey   guifg=#808080 guibg=#202020 gui=none ctermfg=244 ctermbg=236
@@ -111,6 +112,11 @@ hi rubySymbol ctermfg=208
 "====== HTML
 
 hi htmlLink ctermfg=203
+
+"====== Markdown --- gabrielelana/vim-markdown
+
+hi markdownLinkText ctermfg=203
+
 
 " HiLink javascriptAngular Constant
 
