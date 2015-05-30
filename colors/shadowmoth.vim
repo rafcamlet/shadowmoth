@@ -9,35 +9,36 @@ let g:colors_name = "shadowmoth"
 
 " Vim >= 7.0 specific colors
 if version >= 700
-  hi   CursorLine     ctermbg=236
-  hi   ColorColumn    ctermbg=236
-  hi   CursorColumn   ctermbg=236
-  hi   MatchParen     ctermfg=None    ctermbg=237   cterm=bold
-  hi   Pmenu          ctermfg=white   ctermbg=235
-  hi   PmenuSel       ctermfg=none    ctermbg=124   cterm=none
+  hi   CursorLine     ctermbg=236 guibg=#303030
+  hi   ColorColumn    ctermbg=236 guibg=#303030
+  hi   CursorColumn   ctermbg=236 guibg=#303030
+
+  hi   MatchParen     ctermfg=None    ctermbg=237   cterm=bold    guifg=NONE    guibg=#3a3a3a
+  hi   Pmenu          ctermfg=white   ctermbg=235                 guifg=#ffffff guibg=#262626
+  hi   PmenuSel       ctermfg=none    ctermbg=124   cterm=none    guifg=NONE    guibg=#af0000
 endif
 
 "TODO 204 fancy pink, find usage :)
 " General colors
 
-hi   TabLineFill   ctermfg=0    ctermbg=0
-hi   TabLine       ctermfg=248   ctermbg=0     cterm=none
-hi   TabLineSel    ctermfg=111    ctermbg=233   cterm=none
+hi   TabLineFill   ctermfg=0     ctermbg=0                guifg=#000000 guibg=#000000
+hi   TabLine       ctermfg=248   ctermbg=0     cterm=none guifg=#a8a8a8 guibg=#000000
+hi   TabLineSel    ctermfg=111   ctermbg=233   cterm=none guifg=#87afff guibg=#121212
 
-hi Cursor       guifg=NONE    guibg=#626262 gui=none ctermbg=241
-hi NonText      guifg=#808080 guibg=#202020 gui=none ctermfg=244 ctermbg=235
+hi Cursor       guifg=NONE    guibg=#606060 gui=none ctermbg=241
+hi NonText      guifg=#808080 guibg=#262626 gui=none ctermfg=244 ctermbg=235
 
-hi LineNr ctermfg=244 ctermbg=232
-hi Normal ctermfg=253 ctermbg=233
+hi LineNr ctermfg=244 ctermbg=232 guibg=#808080 guibg=#080808
+hi Normal ctermfg=253 ctermbg=233 guifg=#dadada guibg=#121212
 
-hi Search      cterm=reverse   ctermfg=cyan   ctermbg=none
-hi IncSearch   cterm=reverse   ctermfg=red    ctermbg=none
-hi SignColumn  ctermbg=0
+hi Search      cterm=reverse   ctermfg=cyan   ctermbg=none  gui=REVERSE guibg=NONE guifg=#00ffff
+hi IncSearch   cterm=reverse   ctermfg=red    ctermbg=none  gui=REVERSE guibg=NONE guifg=#ef2929
+hi SignColumn  ctermbg=0 guibg=#000000
 
 
-hi WildMenu     cterm=reverse,bold ctermfg=red ctermbg=none
-hi StatusLine   ctermbg=236 cterm=bold
-hi StatusLineNC ctermbg=235 cterm=none
+hi WildMenu     cterm=reverse,bold ctermfg=red ctermbg=none gui=REVERSE,BOLD guifg=#ef2929 guibg=NONE
+hi StatusLine   ctermbg=236 cterm=bold guibg=#303030 gui=BOLD
+hi StatusLineNC ctermbg=235 cterm=none guibg=#262626
 
 hi VertSplit    ctermfg=238 ctermbg=238
 hi Folded       ctermbg=0 ctermfg=248
@@ -98,7 +99,7 @@ hi jsStringS ctermfg=150
 hi link jsStringD NONE
 hi jsStringD ctermfg=150
 
-hi jsLineComment ctermfg=244
+hi jsLineComment ctermfg=244 guifg=#808080
 "====== Fugitive
 
 hi gitcommitDiscardedFile ctermfg=red
