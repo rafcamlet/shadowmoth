@@ -1,8 +1,11 @@
 # Shadowmoth
-255 terminal colorscheme for vim
+255 colorscheme for vim, optimized for GNOME terminal tango colorscheme.
+Looks great on gui too!
 
-(support for gui under development)
+Terminal:
+![example terminal photo](https://raw.githubusercontent.com/rafcamlet/shadowmoth/master/example.png)
 
-![example photo](https://raw.githubusercontent.com/rafcamlet/shadowmoth/master/example.png)
+GUI (NyaoVim):
+![example gui photo](https://raw.githubusercontent.com/rafcamlet/shadowmoth/master/gui_example.png)
 
 Inspired by [Mustang](https://github.com/croaker/mustang-vim)
